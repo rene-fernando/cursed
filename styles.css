@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Jacquard 24", sans-serif;
+    background: #ffeb3b;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    font-size: 2em;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 0px;
+    transition: 0.3s ease-in-out;
+}
+
+.message:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 300px;
+    padding-top: 400px;
+}
+
+.italianText {
+    font-size: 0.5em;
+    padding-top: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #ffeb3b;
+    text-align: center;
+    padding: 10px;
+}
