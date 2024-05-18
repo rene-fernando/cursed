@@ -17,10 +17,10 @@ function checkFridayThe17th() {
     let additionalMessage = ''; 
 
     if (isFridayThe17th) {
-        additionalMessage = 'unless you\'re Italian';
+        additionalMessage = 'unless you\'re <a href="' + url + '" target="_blank">Italian</a>';
     }
     
-    document.getElementById('italianText').textContent = additionalMessage;
+    document.getElementById('italianText').innerHTML = additionalMessage;
 }
 
 checkFridayThe13th();
