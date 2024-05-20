@@ -96,10 +96,9 @@ function updateCountdown() {
         document.getElementById('countdown').textContent = `Come back in ${diffDays} days`;
     }
     else {
-        document.getElementById('countdown').innerHTML = `<strong style="font-size: large;">
+        document.getElementById('countdown').innerHTML = `<strong style="font-size: large;">.
         .
-        .
-        G̶̼͖̥̥̫̞̈̄̿̐̽̈̾Ǫ̷̬͎̯̩̓̈́̒̄͝O͉̗̻̫̮͓̺͍̰͒͐͊̽̀Ḑ̴̠̮̬̻̿͗́͌̐͐̄̚̚͞B̴̡̥̼̘̩̯̗̥̭͎̍̔̐͂̆̄̃͗̈́Y̪͇̤͍͑̑̎̈́̿͐̚͢Ẻ̸͕͎͚̣̭̟̑̔̿́̋̓͟͡͡͠ͅͅ
+        H̴̨̧̨̭͉̙͙͇͂̆̽̎̌̚A̢̪͔̝̦̤͋̎́̑̑̒̄̕͡V̸̡̮̲͉̙͕̗̥̖͊̂̓̌̅̋̎͠͠E̷̟̫̠̥̥̰̍́͋́̈̏̈́̚ M̸̧̬̣̯͖̥͛̓̈́͠͞͞È̲͎͓̥̀͂̾͢͢͡͠R̶̗̣̥̪͓̝͕͈̖̭̐̔̂̓̎̋Č̷̛̮͙̩͉̲͎̪̘̙̩͑̿̓͂̏̕Y͉̠̫̹̮̥̩͋̓̉͋̑͑̂̕͜
         .
         .</strong>`;
     }
