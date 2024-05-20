@@ -21,14 +21,14 @@ function generateZalgo(text) {
 function generateInterval() {
     setInterval(() => {
         document.getElementById('result').textContent = generateZalgo('Yes');
-    }, 500);
+    }, 200);
 }
 
 function ohno() {
+    let maxAppends = 1313;
     let count = 0;
-    const maxAppends = 1313;
+    const bottomText = document.getElementById('bottomText');
     const intervalId = setInterval(() => {
-        const bottomText = document.getElementById('bottomText');
         bottomText.textContent += 'oh no ';
         count++;
         if (count >= maxAppends) {
@@ -53,8 +53,9 @@ function checkFridayThe13th() {
     if (isFridayThe13th) {
         document.body.style.backgroundColor = 'red';
         document.getElementById('result').style.color = 'white';
+        document.getElementById('result').style.fontFamily = 'Jacquard 24';
         document.getElementById('why').style.color = 'white';
-        document.getElementById('why').textContent = 'espape';
+        document.getElementById('why').textContent = 'escape';
     }
     
 }
@@ -72,5 +73,34 @@ function checkFridayThe17th() {
     document.getElementById('italianText').innerHTML = additionalMessage;
 }
 
+function getNextFridayThe13th() {
+    let date = new Date();
+    date.setDate(13);
+
+    while (date.getDay() !== 5) {
+        date.setMonth(date.getMonth() + 1);
+    }
+    
+    return date;
+}
+
+function updateCountdown() {
+    const today = new Date();
+    const nextFridayThe13th = getNextFridayThe13th();
+    const diffTime = Math.abs(nextFridayThe13th - today);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+
+    document.getElementById('countdown').textContent = `Come back in ${diffDays} days`;
+}
+
+function showCountdown() {
+    document.getElementById('countdown').style.visibility = 'visible';
+}
+
+function hideCountdown() {
+    document.getElementById('countdown').style.visibility = 'hidden';
+}
+
+updateCountdown();
 checkFridayThe13th();
 checkFridayThe17th();

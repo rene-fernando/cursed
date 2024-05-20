@@ -17,7 +17,11 @@
         <div class="container">
             <div class="message" id="result">Checking...</div>
             <div class="why" id="why"></div>
-            <img id="image" src="" alt="Image">
+            <img id="image" src="happy.png" alt="Image" usemap="#image-map">
+            <map name="image-map">
+                <area shape="poly" coords="1609,1394,2652,1038,3331,1144,3343,2060,2394,2594,1529,2433" onmouseover="showCountdown()" onmouseout="hideCountdown()">
+            </map>
+            <div id="countdown"></div>
             <div id="bottomText" class="bottomText"></div>
             <div id="italianText" class="italianText"></div>
         </div>

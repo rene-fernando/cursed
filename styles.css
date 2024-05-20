@@ -1,12 +1,33 @@
+/* Styles for screens larger than 1200px */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Styles for screens between 900px and 1199px */
+@media (min-width: 900px) and (max-width: 1199px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Styles for screens smaller than 900px */
+@media (max-width: 899px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: "Jacquard 24", sans-serif;
     background: #ffeb3b;
     text-align: center;
     margin: 0;
+    font-family: 'Jacquard 24', sans-serif;
 }
 
 .container img {
@@ -23,6 +44,12 @@ body {
     text-align: center;
     font-size: 2em;
     margin-bottom: 0px;
+}
+
+#countdown {
+    font-size: 0.4em;
+    margin-top: 0px;
+    visibility: hidden;
 }
 
 img {
