@@ -87,6 +87,10 @@ footer a:link, footer a:visited {
     color: rgb(56, 56, 56);
 }
 
+footer a:hover, footer a:active {
+    color: rgb(164, 90, 0);
+}
+
 footer.friday-the-13th {
     background: rgb(222, 4, 4);
     color: white;
