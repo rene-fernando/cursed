@@ -42,7 +42,7 @@ function ohno() {
 
 function checkFridayThe13th() {
     const today = new Date();
-    const isFridayThe13th = today.getDay() === 5 && today.getDate() === 13;
+    const isFridayThe13th = today.getDay() === 1 && today.getDate() === 20;
     const resultText = isFridayThe13th ? generateInterval() : 'No';
     const imageUrl = isFridayThe13th ? 'uncanny.png' : 'happy.png';
     const additionalMessage = isFridayThe13th ? ohno() : '';
