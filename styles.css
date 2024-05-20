@@ -83,6 +83,10 @@ footer {
     font-size: 0.7em;
 }
 
+footer a:link, footer a:visited {
+    color: rgb(56, 56, 56);
+}
+
 footer.friday-the-13th {
     background: rgb(222, 4, 4);
     color: white;
