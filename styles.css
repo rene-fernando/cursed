@@ -28,6 +28,7 @@ body {
     text-align: center;
     margin: 0;
     font-family: 'Jacquard 24', sans-serif;
+    overflow: hidden;
 }
 
 .container img {
@@ -47,9 +48,8 @@ body {
 }
 
 #countdown {
-    font-size: 0.4em;
+    font-size: 0.5em;
     margin-top: 0px;
-    visibility: hidden;
 }
 
 img {
@@ -78,4 +78,17 @@ footer {
     background: #ffeb3b;
     text-align: center;
     padding: 10px;
+}
+
+footer.friday-the-13th {
+    background: rgb(222, 4, 4);
+    color: white;
+}
+
+footer.friday-the-13th a:link, footer.friday-the-13th a:visited {
+    color: white;
+}
+
+footer.friday-the-13th a:hover, footer.friday-the-13th a:active {
+    color: red;
 }

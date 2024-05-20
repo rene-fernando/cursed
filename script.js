@@ -20,7 +20,7 @@ function generateZalgo(text) {
 
 function generateInterval() {
     setInterval(() => {
-        document.getElementById('result').textContent = generateZalgo('Yes');
+        document.getElementById('result').textContent = generateZalgo('yes');
     }, 200);
 }
 
@@ -29,7 +29,7 @@ function ohno() {
     let count = 0;
     const bottomText = document.getElementById('bottomText');
     const intervalId = setInterval(() => {
-        bottomText.textContent += 'oh no ';
+        bottomText.textContent += 'exit now ';
         count++;
         if (count >= maxAppends) {
             clearInterval(intervalId);
@@ -56,6 +56,8 @@ function checkFridayThe13th() {
         document.getElementById('result').style.fontFamily = 'Jacquard 24';
         document.getElementById('why').style.color = 'white';
         document.getElementById('why').textContent = 'escape';
+        document.getElementById('footer').classList.add('friday-the-13th');
+        return true;
     }
     
 }
@@ -90,7 +92,17 @@ function updateCountdown() {
     const diffTime = Math.abs(nextFridayThe13th - today);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
 
-    document.getElementById('countdown').textContent = `Come back in ${diffDays} days`;
+    if(!checkFridayThe13th()) {
+        document.getElementById('countdown').textContent = `Come back in ${diffDays} days`;
+    }
+    else {
+        document.getElementById('countdown').innerHTML = `<strong style="font-size: large;">
+        .
+        .
+        G̶̼͖̥̥̫̞̈̄̿̐̽̈̾Ǫ̷̬͎̯̩̓̈́̒̄͝O͉̗̻̫̮͓̺͍̰͒͐͊̽̀Ḑ̴̠̮̬̻̿͗́͌̐͐̄̚̚͞B̴̡̥̼̘̩̯̗̥̭͎̍̔̐͂̆̄̃͗̈́Y̪͇̤͍͑̑̎̈́̿͐̚͢Ẻ̸͕͎͚̣̭̟̑̔̿́̋̓͟͡͡͠ͅͅ
+        .
+        .</strong>`;
+    }
 }
 
 function showCountdown() {
