@@ -24,7 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #ffeb3b;
+    background: #ffeb3ba0;
     text-align: center;
     margin: 0;
     font-family: 'Jacquard 24', sans-serif;
@@ -48,8 +48,10 @@ body {
 }
 
 #countdown {
-    font-size: 0.5em;
+    font-size: 0.4em;
     margin-top: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
 }
 
 img {
@@ -75,9 +77,10 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #ffeb3b;
     text-align: center;
     padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.7em;
 }
 
 footer.friday-the-13th {

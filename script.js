@@ -44,7 +44,7 @@ function checkFridayThe13th() {
     const today = new Date();
     const isFridayThe13th = today.getDay() === 5 && today.getDate() === 13;
     const resultText = isFridayThe13th ? generateInterval() : 'No';
-    const imageUrl = isFridayThe13th ? 'uncanny.png' : 'happy.png';
+    const imageUrl = isFridayThe13th ? 'uncanny.png' : 'whatamidoing.png';
     const additionalMessage = isFridayThe13th ? ohno() : '';
 
     document.getElementById('result').textContent = resultText;
@@ -93,7 +93,7 @@ function updateCountdown() {
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
 
     if(!checkFridayThe13th()) {
-        document.getElementById('countdown').textContent = `Come back in ${diffDays} days`;
+        document.getElementById('countdown').textContent = `come back in ${diffDays} days`;
     }
     else {
         document.getElementById('countdown').innerHTML = `<strong style="font-size: large;">.
